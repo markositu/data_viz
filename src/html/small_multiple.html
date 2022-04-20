@@ -20,7 +20,7 @@
       height = 210 - margin.top - margin.bottom;
 
     //Read the data
-    d3.csv("/data/The_Top_Billionaires.csv", function (data) {
+    d3.csv("../../data/The_Top_Billionaires.csv", function (data) {
 
       // group the data: I want to draw one line per group
       var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
