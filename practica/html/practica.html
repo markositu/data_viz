@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseases</title>
+</head>
+<body>
+    <h1>Diseases classification</h1>
+    <input type="button" value="By Age" onclick="hideSleep()">
+    <input type="button" value="By Sleep" onclick="hideAge()">
+    <div id="byAge" class="flourish-embed flourish-chart" data-src="visualisation/10333524"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <div style="display: none;" id="bySleep" class="flourish-embed flourish-chart" data-src="visualisation/10334204"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <div>Data source: <a href="https://www.kaggle.com/code/jaewook704/heart-disease-scoring-who-is-dangerous/data">Dataset</a></div>
+    <script>
+        function hideSleep(){
+            document.getElementById("bySleep").style.display="none";
+            document.getElementById("byAge").style.display="block";
+        }
+        function hideAge(){
+            document.getElementById("byAge").style.display="none";
+            document.getElementById("bySleep").style.display="block";
+        }
+    </script>
+</body>
+</html>
